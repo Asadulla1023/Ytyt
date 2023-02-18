@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    z-index: 6;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    height: 51px;
+    margin-top: 12px;
+    border-radius: 75px;
+}
+
+.navbarCont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbarLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeft > .routes > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeft > .routes > ul > li {
+    margin-top: 2px;
+}
+
+.navbarLeft > .routes > ul > li > a {
+    text-decoration: none;
+    margin-left: 47px;
+    font-size: 13px;
+    color: #22253B;
+}
+
+.navbarLeft > .routes > ul > li > a:hover {
+    color: #f15525;
+    transition: color .3s;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.navbarRight > a {
+    display: flex;
+    color: #22253B;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 27px;
+    font-weight: 500;
+}
+
+.navbarRight > a:hover {
+    color: #f15525;
+    transition: color .3s;
+}
+
+.navbarRight > a:last-child {
+    display: flex;
+    align-items: center;
+    padding: 9px 17px 8px 12px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 54px;
+    justify-content: space-between;
+    width: 90%;
+    color: #fff;
+    background-color: #38bff2;
+    transition: background-color .3s;
+}
+
+.navbarRight > a:last-child:hover {
+    background: #f15525;
+}
+
+.navbarRight > a > img {
+    width: 20px;
+    height: 12px;
+    left: -5px;
+    position: relative;
+}
+
+
+.burger {
+    display: none;
+}
+
+.burgerOpener {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbarLeft > img {
+        width: 40px;
+        height: 16px;   
+    }
+
+    .burgerOpener {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbarLeft > .routes {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width : 400px) {
+    .navbarRight > a:first-child {
+        display: none;
+    }    
+    .navbarRight > a:last-child {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,347 @@
+.platform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > h1 {
+  font-size: 46px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container > p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  max-width: 642px;
+  margin-bottom: 30px;
+}
+
+.platSteps {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  list-style: none;
+  padding: 45px 0 52px 5px;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.stepCard {
+  padding: 0 48px;
+}
+
+.stepTitle {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-style: normal;
+  font-size: 77px;
+  line-height: 1;
+  font-weight: 700;
+  color: #38bff2;
+}
+
+.stepSubtitle {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1c2022;
+}
+
+.stepDesc {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0;
+  color: #1c2022;
+  font-weight: 400;
+}
+
+.learnForFree {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  width: 548px;
+  background-color: #fff;
+  border-radius: 110px;
+}
+
+.learnForFree > a {
+  display: flex;
+  align-items: center;
+  padding: 25px 49px 26px 50px;
+  background-color: #f15525;
+  border-radius: 82px;
+  font-size: 16px;
+  line-height: 96.69%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #fff;
+  transition: background-color 0.3s !important;
+  text-decoration: none;
+}
+
+.learnForFree > a:hover {
+  background: #38bff2;
+}
+
+.learnForFree > a > img {
+  margin-left: 15px;
+}
+
+.learnForFree > p {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 24px;
+  width: 234px;
+}
+
+.platformBtm {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #fff;
+  border-radius: 80px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.btmRow1 {
+  display: grid;
+  grid-template-columns: minmax(auto, 400px) minmax(auto, 730px);
+  grid-gap: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.rowItem1 {
+  padding-left: 65px;
+  padding-right: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf2f5;
+  border-radius: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.video {
+  position: static;
+  z-index: 10;
+  /* top: 0; */
+  margin-top: -420px;
+  width: 570px;
+  border-radius: 10px;
+  background: #000;
+  left: 670px;
+  height: 380px;
+  margin-bottom: 60px;
+}
+
+.rowItem2 {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 90px 64px 100px;
+  display: flex;
+  justify-content: center;
+  background: #eaf2f5;
+  border-radius: 40px;
+}
+
+.rowItem2 > h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.rowItem2 > p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.btmRow2 {
+  grid-template-columns: minmax(auto, 730px) minmax(auto, 400px);
+  grid-gap: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 30px;
+  display: grid;
+}
+
+.rowItem3 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 90px 64px 100px;
+  background: #eaf2f5;
+  border-radius: 40px;
+}
+
+.rowItem3 > h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.rowItem3 > p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .platSteps {
+    margin-top: 20px;
+    display: block;
+    grid-template-columns: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 81px 120px -77px rgb(34 37 59 / 4%);
+  }
+
+  .container > h1 {
+    margin-top: 60px;
+    font-size: 28px;
+  }
+
+  .container > p {
+    font-size: 12px;
+  }
+
+  .stepCard {
+    padding: 28px 0;
+  }
+
+  .stepCard > h1 {
+    font-size: 50px;
+  }
+
+  .stepCard > h3 {
+    font-size: 20px;
+  }
+
+  .stepCard > p {
+    font-size: 12px;
+  }
+
+  .platformBtm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+  }
+
+  .btmRow1,
+  .btmRow2 {
+    display: flex;
+    flex-flow: column nowrap;
+    grid-gap: 12px;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .rowItem2, .rowItem3 {
+    padding: 20px;
+  }
+
+  .rowItem2 > h4, .rowItem3 > h4 {
+    font-size: 20px;
+  }
+
+  .rowItem2 > p, .rowItem3 > p {
+    font-size: 12px;
+  }
+
+  .rowItem1 {
+    padding: 30px 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .macbook {
+    max-width: 600px;
+    height: 274px;
+  }  
+  .video {
+    width: 359px;
+    height: 244px;
+    margin-top: -263px;
+  }
+}
+
+@media screen and (max-width : 600px) {
+  .platSteps {
+    border-radius: 20px !important;
+  }
+  .learnForFree {
+    display: block;
+    padding: 11px 25px 18px;
+    max-width: 100%;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .learnForFree > a {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 28px 47px 26px 50px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 96.69%;
+    width: 249px;
+   }
+
+  .learnForFree > a > img {
+    margin-left: 10px;
+  }
+  .learnForFree > p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .macbook {
+    width: 300px;
+    height: 174px;
+  }
+  .video {
+    margin-top: -164px;
+    width: 229px;
+    height: 144px;
+  }
+}

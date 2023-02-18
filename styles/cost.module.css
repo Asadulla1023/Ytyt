@@ -1,0 +1,168 @@
+.cost {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container > h1 {
+  margin: 0 30px;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container > h2 {
+  margin-top: 30px;
+  font-weight: 500;
+  color: #22253b;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container > h2 > strong {
+  color: #091db4;
+}
+
+.costHeader {
+  display: grid;
+  grid-template-columns: minmax(auto, 391px) minmax(auto, 252px) minmax(
+      auto,
+      380px
+    );
+  margin-bottom: 30px;
+  grid-column-gap: 69px;
+  column-gap: 69px;
+}
+
+.costItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.costItem > img {
+  margin-right: 30px;
+}
+
+.costItem > p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #22253b;
+}
+
+.costWrapper {
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 54px;
+  border-radius: 30px;
+  background-color: #eaf2f5;
+}
+
+.costWrapper > p {
+  margin: 0;
+  max-width: 57%;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+}
+
+.costWrapper > a {
+  display: flex;
+  align-items: center;
+  padding: 26px 62px 25px 58px;
+  background-color: #f15525;
+  border-radius: 82px;
+  font-size: 20px;
+  line-height: 96.69%;
+  user-select: none;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s !important;
+}
+
+.costWrapper > a:hover {
+  background: #38bff2;
+}
+
+.costWrapper > a > img {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container > h1 {
+    font-size: 28px;
+  }
+  .costItem > p {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  .costWrapper {
+    display: block;
+    text-align: center;
+    padding: 42px 25px 54px;
+  }
+  .costWrapper > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  .costHeader {
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  .costItem {
+    margin-bottom: 25px;
+    flex-flow: column nowrap;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .costWrapper > a {
+    margin-top: 15px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 53px 21px 51px;
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width : 600px) {
+  .costItem > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+  }
+}

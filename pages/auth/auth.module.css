@@ -1,0 +1,138 @@
+.auth {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 522px;
+  margin-top: 44px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 36px 20px;
+}
+
+.container {
+  padding: 40px 50px;
+}
+.container > div {
+  width: 100%;
+}
+.authForm > input {
+  width: 100%;
+}
+
+.authForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.authForm > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.authForm > input {
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid transparent;
+  background: #f7f6f7;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  height: 54px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #171818;
+  transition: 0.2s linear;
+}
+
+.authForm > input:focus {
+  background: #fff;
+  outline: 0.2px solid black;
+}
+
+.authForm > button {
+  margin-top: 12px;
+  background: #1e88e5;
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 6px 24px -4px rgb(23 24 24 / 10%);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 23px 16px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.authForm > a {
+  text-align: center;
+  text-decoration: none;
+  color: #1e88e5;
+}
+
+@media screen and (max-width: 740px) {
+  .auth {
+    background: transparent;
+
+  }
+  .container {
+    background: transparent;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .container > div {
+    width: 100%;
+  }
+  .authForm > input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button:disabled {
+  background: #1e88e54b;
+}
+
+@media screen and (max-width: 370px) {
+  .auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}

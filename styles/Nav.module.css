@@ -1,0 +1,94 @@
+.burger {
+    display: none;
+}
+
+.burgerBg {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .burger {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+    height: 95%;
+    width: 90%;
+    border-radius: 20px;
+    margin: 30px;
+    margin-left: 50px;
+    background: #fff;
+  }
+
+  .modalcloser {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .modalcloser > img {
+    cursor: pointer;
+  }
+
+  .routes > ul > li > a {
+    text-decoration: none;
+    color: #012012;
+  }
+
+  .routes > ul {
+    margin-top: 27px;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .routes > ul > li {
+    list-style-type: none;
+    margin-bottom: 21px;
+  }
+
+  .navLog {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 9px 17px 8px 12px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 54px;
+    color: #fff;
+    background-color: #38bff2;
+    transition: background-color 0.3s;
+    justify-content: center;
+    margin-top: auto;
+    height: 49px;
+    width: 132px;
+    font-size: 15px;
+  }
+
+  .navLog:hover {
+    background: #f15525;
+  }
+
+  .rightArr {
+    margin-right: 10px;
+  }
+
+  .burgerBg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(34, 37, 59, 0.9),
+      rgba(34, 37, 59, 0.9)
+    );
+    opacity: 0.55;
+    width: 100vw;
+    height: 150vh;
+    z-index: 10;
+  }
+}

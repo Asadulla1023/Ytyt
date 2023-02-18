@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fafafa;
+  overflow-y: scroll;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  user-select: none;
+}
+
+a, button {
+  user-select: none;
+}
+
+.chatCopyright_cd15 {
+  display: none;
+}
+
+@media screen and (max-width:1085px) {
+  .ace_line > span {
+    font-size: 10pt;
+  }
+  .ace_gutter-cell {
+    font-size: 10pt;
+  }
+}
+
+.chatCopyright_f36b {
+  display: none;
+}
+
+.ace_print-margin {
+  display: none;
+}

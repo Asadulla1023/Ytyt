@@ -1,0 +1,18 @@
+.codeWrapper {
+    max-width: 1100px;
+    min-height: 170px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+    background: #202531;
+}
+
+@media screen and (max-width:1085px) {
+    .ace_editor {
+        font: 9px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    }
+    .codeWrapper {
+        width: 100%;
+    }
+}
