@@ -167,3 +167,5 @@ export const COURSE_LIST_DATA_T = [
     url: "/course/3/2",
   },
 ];
+
+

@@ -1,51 +1,85 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    box-shadow: 0 0 20px -4px rgb(23 24 24 / 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 0 20px -4px rgb(23 24 24 / 8%);
 }
 
 .container {
-    width: 1360px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
+  width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .forUser {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
 }
 
 .headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logoWrap {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .headerMsg {
-    position: relative;
-    color: #939598;
-    transition: color .25s ease-in-out;
+  position: relative;
+  color: #939598;
+  transition: color 0.25s ease-in-out;
+}
+
+.routes {
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+.routes > ul > li > a {
+  text-decoration: none;
+  color: #012012;
+}
+
+.routes > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.routes > ul > li {
+  list-style-type: none;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 1000px) {
-    .headerMsg > a > img {
-        width: 28px;
-        height: 24px;
-    }
-    .headerWrapper {
-        padding: 6px 0;
-    }
+  .headerMsg > a > img {
+    width: 28px;
+    height: 24px;
+  }
+  .headerWrapper {
+    padding: 6px 0;
+  }
 }
