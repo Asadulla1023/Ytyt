@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import "animate.css";
 import Image from "next/image";
@@ -11,7 +11,16 @@ import Cost from "../components/pages/Cost";
 import Contact from "../components/pages/Contact";
 
 export default function Home() {
-
+  useEffect(()=> {
+    document.addEventListener("contextmenu",  e => {
+      e.preventDefault()
+    })
+    document.onkeydown = function (e) {
+      if(e.keyCode == 123) {
+          return false;
+      }
+    }
+  })
   const data = new Date();
 
   const year = data.getFullYear();

@@ -15,3 +15,222 @@
     padding-right: 32px;
 }
 
+.homePage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .educCard {
+    margin: 30px;
+      transition: 0.1s linear;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 24px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #38bff2;
+    border-radius: 15px;
+  }
+  
+  .meaningOfHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoOfEducation {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    width: 92%;
+  }
+  
+  .homeCenter {
+      margin-top: 30px;
+  }
+  
+  .logoOfEducation > h2 {
+    text-align: right;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000a6;
+  }
+  
+  .educCard {
+    margin-bottom: 55px;
+  }
+  
+  .educCard:hover {
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .Ba {
+    width: 150px;
+    border: 0 solid #000;
+    border-radius: 50%;
+  }
+  
+  .aboutSectOfHome {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutSection {
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  .selectYourC > button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    background-color: #5D737E;
+    color: #C0FDFB;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 25px;
+  }
+  
+  .aboutSection > a {
+    color: rgb(89, 0, 255);
+  }
+  
+  .aboutSection > a:hover {
+    color: #000;
+  }
+  
+  
+  .learnMore > h3 > a {
+    text-decoration: underline;
+    font-size: 22px;
+    color: #000;
+  }
+  
+  .learnMore > h3 > a:hover {
+    color: rgb(0, 21, 255);
+  }
+
+.Ba {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.AdsFoot {
+  overflow-x: scroll;
+  margin-top: 100px;
+}
+
+.AdCarousel {
+  margin-bottom: 50px;
+}
+
+.AdsWrapper {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Adscard {
+  width: 350px;
+  padding: 10px;
+  height: 150px;
+  gap: 10px;
+  margin: 15px;
+  background: #38bff2;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  transition: 0.1s linear;
+}
+
+.Adscard:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.adds {
+  gap: 10px;
+}
+
+
+.top > h3 {
+  color: #0d0d0d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.top > p {
+  font-style: italic;
+  color: #0d0d0d;
+}
+
+.leftside {
+  padding: 10px;
+  background: #38bff2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutSection {
+    width: 350px;
+  color: #0d0d0d;
+  margin-top: 15px;
+}
+
+.aboutSection > p {
+  text-align: left;
+}
+
+.aboutSection > button {
+  position: relative;
+  left: -100px;
+  align-self: start;
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background-color: #5D737E;
+  color: #C0FDFB;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.aboutSection > button:hover {
+  color: #5D737E;
+  background: #C0FDFB;
+}
+
+.slider-wrapper {
+  padding-left: 20px;
+}
+
+.AdCarousel {
+  margin-top: 100px;
+}

@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fafafa;
   overflow-y: scroll;
+  user-select: none;
 }
 
 html {
@@ -43,4 +44,17 @@ a, button {
 
 .ace_print-margin {
   display: none;
+}
+.carousel-status {
+  display: none;
+}
+.control-dots {
+  display: none;
+}
+.carousel.carousel-slider .control-arrow {
+  display: none;
+}
+
+.course_educCard__IJ2wj  {
+  box-shadow: none
 }

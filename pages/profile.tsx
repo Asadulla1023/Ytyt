@@ -5,14 +5,20 @@ import Header from "../components/pages/Header";
 import Image from "next/image";
 
 import styles from "../styles/profile.module.css";
+import Link from "next/link";
 
 const profile = () => {
-  const replitRef = useRef<LegacyRef<HTMLInputElement> | any>("")
-  
+  const replitRef = useRef<LegacyRef<HTMLInputElement> | any>("");
+
   useEffect(()=> {
-    document.addEventListener("contextmenu", e => {
+    document.addEventListener("contextmenu",  e => {
       e.preventDefault()
     })
+    document.onkeydown = function (e) {
+      if(e.keyCode == 123) {
+          return false;
+      }
+    }
   })
 
   return (
@@ -37,7 +43,7 @@ const profile = () => {
                 </div>
                 <div className={styles.content}>
                   <form className={styles.form}>
-                    <input type="text" id="name" placeholder={"Asadulloh"}/>
+                    <input type="text" id="name" placeholder={"Asadulloh"} />
                     <input
                       type="text"
                       placeholder="fayzullox512mi@gmail.com"
@@ -45,7 +51,7 @@ const profile = () => {
                     />
                     <input type="text" ref={replitRef} placeholder="Replit" />
                     <button> Сохранить изменения </button>
-                    <a href="/auth/changepassword"> Сменить пароль </a>
+                    <Link href="/auth/changepassword"> Сменить пароль </Link>
                   </form>
                 </div>
               </div>

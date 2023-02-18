@@ -20,30 +20,19 @@ const Header = () => {
             <div className={styles.routes}>
               <ul>
                 <li>
-                  <Link href="#learn">Курсы</Link>
+                  <Link href="/course">Курсы</Link>
                 </li>
                 <li>
-                  <Link href="#platform">Группы</Link>
+                  <Link href="/group">Группы</Link>
                 </li>
                 <li>
-                  <Link href="#cost">Студенты</Link>
-                </li>
-                <li>
-                  <Link href="#contact">Оценки</Link>
+                  <Link href="/students">Студенты</Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className={styles.forUser}>
             <div className={styles.headerMsg}>
-              <Link href="/messages">
-                <Image
-                  src="/mail.svg"
-                  alt="message img"
-                  width={35}
-                  height={31}
-                />
-              </Link>
             </div>
             <div className={styles.headerUser}>
               <Link href="/profile">
