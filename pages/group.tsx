@@ -7,6 +7,7 @@ import {
   AI_GROUP,
 } from "../constant/index";
 import Header from "../components/pages/Header";
+import Head from "next/head";
 const Group = () => {
     useEffect(()=> {
         document.addEventListener("contextmenu",  e => {
@@ -20,6 +21,10 @@ const Group = () => {
       })
   return (
     <>
+    <Head>
+        <title>Главная | YtYt - понятные уроки программирования</title>
+        <link rel="shortcut icon" href="/title.png" type="image/x-icon" />
+      </Head>
       <Header />
       <div className={styles.lessons}>
         <div className={styles.container}>

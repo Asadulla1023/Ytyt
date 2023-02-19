@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect } from "react";
 import Header from "../components/pages/Header";
 import { CSHARP_DATA, JAVASCRIPT_DATA, PYTHON_DATA } from "../constant/index";
@@ -16,6 +17,10 @@ const students = () => {
   })
   return (
     <>
+    <Head>
+        <title>Главная | YtYt - понятные уроки программирования</title>
+        <link rel="shortcut icon" href="/title.png" type="image/x-icon" />
+      </Head>
       <Header />
       <div className={styles.studentsPage}>
         <div className={styles.container}>
