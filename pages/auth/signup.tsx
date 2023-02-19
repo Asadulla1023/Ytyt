@@ -1,12 +1,13 @@
 import styles from "./auth.module.css";
 
 import { useRef } from "react";
-
+import { setCookie } from "cookies-next";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
 function Signup() {
+  const userRef = useRef<any>()
   const passRef = useRef<HTMLInputElement>(null);
   const btnRef = useRef<HTMLButtonElement>(null);
 
@@ -22,6 +23,13 @@ function Signup() {
     }
   };
 
+  const inputChanging = () => {
+    if (userRef.current) {
+      setCookie("userName", userRef.current.value, {path: "/"})
+      localStorage.setItem("userName", userRef.current.value)
+    }
+  }
+
   return (
     <>
       <Head>
@@ -34,7 +42,7 @@ function Signup() {
           <div className={styles.login}>
             <form action="/course" autoComplete="off" className={styles.authForm}>
               <h1>Регистрация</h1>
-              <input placeholder="Имя" autoComplete="off" type="text" required />
+              <input placeholder="Имя" ref={userRef} onChange={inputChanging} autoComplete="off" type="text" required />
               <input
                 placeholder="Фамилия"
                 type="text"

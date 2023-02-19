@@ -118,6 +118,7 @@
 .tableTr2 {
     /* border-top: 1px solid #c6cbd1; */
     border-spacing: 0;
+    overflow: auto;
 }
 
 .tableTr2 > th {

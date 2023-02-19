@@ -10,7 +10,7 @@ import { ADDS, EDUC } from "../constant";
 const course = () => {
   useEffect(() => {
     document.addEventListener("contextmenu", (e) => {
-      e.preventDefault();
+      // e.preventDefault();
     });
     document.onkeydown = function (e) {
       if (e.keyCode == 123) {

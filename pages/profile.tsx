@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { LegacyRef, useRef, useState, useEffect } from "react";
 import Header from "../components/pages/Header";
-
+import { getCookie } from 'cookies-next';
 import Image from "next/image";
 
 import styles from "../styles/profile.module.css";
@@ -9,7 +9,8 @@ import Link from "next/link";
 
 const profile = () => {
   const replitRef = useRef<LegacyRef<HTMLInputElement> | any>("");
-
+  // @ts-ignore
+  const name: InputHTMLAttributes<HTMLInputElement> = getCookie("userName")
   useEffect(()=> {
     document.addEventListener("contextmenu",  e => {
       e.preventDefault()
@@ -20,6 +21,8 @@ const profile = () => {
       }
     }
   })
+
+  
 
   return (
     <>
@@ -42,11 +45,11 @@ const profile = () => {
                   />
                 </div>
                 <div className={styles.content}>
-                  <form className={styles.form}>
-                    <input type="text" id="name" placeholder={"Asadulloh"} />
+                  <form className={styles.form} action="/course">
+                    <input type="text" id="name" placeholder={"Username"} />
                     <input
                       type="text"
-                      placeholder="fayzullox512mi@gmail.com"
+                      placeholder="email@gmail.com"
                       disabled
                     />
                     <input type="text" ref={replitRef} placeholder="Replit" />
