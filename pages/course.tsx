@@ -29,7 +29,7 @@ const course = () => {
         <div className={styles.lessons}>
           <div className={styles.container}>
             <div className={styles.lessonWrapper}>
-              <Carousel autoPlay={true} interval={2000} infiniteLoop verticalSwipe="standard">
+              <Carousel autoPlay={true} interval={5000} infiniteLoop verticalSwipe="standard">
                 {EDUC.map((e) => {
                   return (
                     <div className={styles.educCard} key={e.id}>
