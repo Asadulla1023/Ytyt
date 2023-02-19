@@ -34,18 +34,20 @@ function Signup() {
           <div className={styles.login}>
             <form action="/course" autoComplete="off" className={styles.authForm}>
               <h1>Регистрация</h1>
-              <input placeholder="Имя" type="text" required />
+              <input placeholder="Имя" autoComplete="off" type="text" required />
               <input
                 placeholder="Фамилия"
                 type="text"
+                autoComplete="off"
                 required
                 minLength={1}
               />
-              <input placeholder="Email" type="email" required />
+              <input placeholder="Email" autoComplete="off" type="email" required />
               <input
                 placeholder="Пароль"
                 type="password"
                 required
+                autoComplete="off"
                 onChange={buttonAbleHandler}
                 minLength={8}
                 ref={passRef}

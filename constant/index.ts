@@ -698,6 +698,10 @@ export const EDUC = [
     title: "Javascript",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas rerum maxime ducimus unde. Ad accusantium ratione eius tempore, blanditiis est amet odio reiciendis eos praesentium quidem? Quibusdam, deleniti molestiae a quos saepe minus suscipit quaerat quidem in pariatur libero nam modi quo ea ipsam, repudiandae vel debitis delectus totam!",
     id: Math.random() * 1000000
+  },
+  {
+    title: "C#",
+    id: 300099
   }
 ];
 
